@@ -39,7 +39,7 @@
     <script>
 
         $(document).ready(function(){
-            fibber.initialize();
+            fibber.init();
 
 
         });
@@ -51,61 +51,53 @@
 
 <body >
     <div id="splashscreen" class='ui-loader heavy'>
-        fibber
+        Fibber
+        <br>
         <br>
         <span class='ui-icon ui-icon-loading spin'></span>
-        <h1>loading...</h1>
+        <h1>Starting app</h1>
+
     </div>
 
     <div class="view" id="mainview">
 
         <div class="pages">
-
-
             <div class="panel" id="instructions">
-                <div class="card">
-                    <div class="gametitle-splash">fibber</div>
-                    <div class="gamedesc-splash">a game about political deception and stripping</div>
-                    <br>
-                    <b>how to play</b>
-                    <p>1. read statement<br>
-                    2. decide if it’s a truth or a fib<br>
-                    3. first person naked loses</p>
-                    <a href="#viewstatement" id="startbtn" class="button">start</a>
-                </div>
+                fibber<br>
+                how to play<br>
+                1. read statement<br>
+                2. decide if it’s a truth or a fib<br>
+                3. first person naked loses. <br>
+
+                <a href="#viewstatement" id="startbtn" class="button">START</a>
+
             </div>
-            
 
             <div class="panel" id="viewstatement">
-                <div id="gameheader">
-                    <span id="gametitle">fibber</span>
-                </div>
-                <div id="clinton" class="col-char">
-                    <img class="char-draw" src="build/img/clinton_sm.png" />
-                    <div class="char-name">hillary clinton</div>
-                    <div id="counter-clinton" class="lives-count-box">5</div>
-                    <div id="clinton-action-btns">
-                        <a href="#" class="button game-btn truth-btn">TRUTH</a><br>
-                        <a href="#" class="button game-btn fib-btn">FIB</a>
+
+                <div id="clinton">
+                    <div>hillary clinton</div>
+                    <div>5</div>
+                    <div>
+                        <a href="#" class="button">TRUTH</a><br>
+                        <a href="#" class="button">FIB</a>
                     </div>
                 </div>
 
-                <div id="statement" class="col-statement">
-                    <div id="statement-text">--</div>
-                    <div id="statement-context">--</div>
+                <div id="statement">
+                    <div>SOME KIND OF STATEMENT</div>
+                    <div>- some kind of context</div>
                 </div>
+                <div>5</div> 
 
-                <div id="trump" class="col-char">
-                    <img class="char-draw" src="build/img/trump_sm.png" />
-                    <div class="char-name">donald trump</div>
-                    <div id="counter-trump" class="lives-count-box">5</div>
-                    <div id="trump-action-btns">
-                        <a href="#" class="button game-btn truth-btn">TRUTH</a><br>
-                        <a href="#" class="button game-btn fib-btn">FIB</a>
+                <div id="trump">
+                    <div>donald trump</div>
+                    <div>5</div>
+                    <div>
+                        <a href="#" class="button">TRUTH</a><br>
+                        <a href="#" class="button">FIB</a>
                     </div>
                 </div>
-
-                <div id="counter-player" class="lives-count-box">5</div>
 
             </div>
 

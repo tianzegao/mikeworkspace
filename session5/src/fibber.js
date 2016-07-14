@@ -12,27 +12,42 @@ SESSION 5 - Coding Basics
 
 //var is used to create variables
 //using the {} to create a variable that is type object
+$(document).ready(function(){
 var fibber = {};
 
 
+
+
 //this is a function that can be called using fibber.init();
+//fibber.add= function(){
+	//alert("hi");
+//}  
+
 fibber.initialize = function(){
 
 	$("#startbtn").on("click", fibber.start);
+    //fibber.start("lol");
 
 };
 
-fibber.start = function(){
-	alert("Start Button Clicked...");
+
+fibber.start = function(whattosay){
+	alert(whattosay);
 };
 
+fibber.add=function(x,y){
+    alert(x+y);
+
+};
+
+fibber.add(2,3);
+fibber.add(5,1);
+//fibber.initialize();
 
 
 
 
-
-
-
+});
 
 
 
